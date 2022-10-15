@@ -2,7 +2,7 @@ from tkinter import *
 import random
 import time
 import subprocess
-subprocess.call('angry_birds.wav', shell=True)
+subprocess.Popen('angry_birds.wav', shell=True)
 
 class Ball:
     def __init__(self, game, paddle, color):
