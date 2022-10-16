@@ -2,7 +2,8 @@ from tkinter import *
 import random
 import time
 import subprocess
-subprocess.Popen('angry_birds.wav', shell=True)
+subprocess.call('angry_birds.wav', shell=True)
+# subprocess.Popen(['afplay', 'AngryBirds.wav']) # For Mac use this instead
 
 class Ball:
     def __init__(self, game, paddle, color):
